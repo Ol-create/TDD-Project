@@ -63,30 +63,17 @@ describe Solver do
     end
   end
 
-  ## 1. Fizzbuzz Method Validation
-  it 'for a number divisible by 3, should return fizz' do
-    fizz = @solver.fizzbuzz(9)
-    expect(fizz).to eq('fizz')
-  end
+  describe '#fizzbuzz' do
+    it 'returns "fizz" for multiples of 3' do
+      expect(solver.fizzbuzz(3)).to eq('fizz')
+    end
 
-  ## 2. Fizzbuzz Method Validation
+    it 'returns "buzz" for multiples of 5' do
+      expect(solver.fizzbuzz(5)).to eq('buzz')
+    end
 
-  it 'for a number divisible by 5, should return buzz' do
-    buzz = @solver.fizzbuzz(10)
-    expect(buzz).to eq('buzz')
-  end
-
-  ## 3. Fizzbuzz Method Validation
-
-  it 'for a number divisible by 3 and 5, should return fizzbuzz' do
-    fizzbuzz = @solver.fizzbuzz(15)
-    expect(fizzbuzz).to eq('fizzbuzz')
-  end
-
-  ## 4. Fizzbuzz Method Validation
-
-  it 'for a number divisible by 3 and 5, should return 7' do
-    fizzbuzz = @solver.fizzbuzz(7)
-    expect(fizzbuzz).to eq('7')
+    it 'returns "fizzbuzz" for multiples of 3 and 5' do
+      expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
+    end
   end
 end
