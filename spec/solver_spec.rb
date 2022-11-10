@@ -76,4 +76,11 @@ describe Solver do
     expect(buzz).to eq('buzz')
   end
 
+  ## 3. Fizzbuzz Method Validation
+
+  it 'for a number divisible by 3 and 5, should return fizzbuzz' do
+    fizzbuzz = @solver.fizzbuzz(15)
+    expect(fizzbuzz).to eq('fizzbuzz')
+  end
+
 end
