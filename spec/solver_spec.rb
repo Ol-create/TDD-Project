@@ -69,4 +69,11 @@ describe Solver do
     expect(fizz).to eq('fizz')
   end
 
+  ## 2. Fizzbuzz Method Validation
+
+  it 'for a number divisible by 5, should return buzz' do
+    buzz = @solver.fizzbuzz(10)
+    expect(buzz).to eq('buzz')
+  end
+
 end
