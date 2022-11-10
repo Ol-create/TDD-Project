@@ -62,4 +62,11 @@ describe Solver do
       expect(solver.reverse('hello world')).to eq('dlrow olleh')
     end
   end
+  
+  ## 1. Fizzbuzz Method Validation
+  it 'for a number divisible by 3, should return fizz' do
+    fizz = @solver.fizzbuzz(9)
+    expect(fizz).to eq('fizz')
+  end
+
 end
